@@ -23,7 +23,7 @@ class Api::V1::SessionsController < ApplicationController
     def check
         if current_user
             #render json: {current_user: current_user}
-            render json: {current_user: "submodule"}
+            render json: {current_user: current_user}
         else
             render json: {current_user: nil}
         end
